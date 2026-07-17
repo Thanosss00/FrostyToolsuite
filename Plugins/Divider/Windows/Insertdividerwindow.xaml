@@ -1,0 +1,50 @@
+<ctrl:FrostyWindow x:Class="ModCategories.Windows.InsertDividerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:ctrl="clr-namespace:Frosty.Controls;assembly=FrostyControls"
+        mc:Ignorable="d"
+        Title="Insert Category Divider" Height="265" Width="360"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/ModCategories;component/Themes/Generic.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Pick an existing category:" Foreground="{StaticResource FontColor}" Margin="0,0,0,6"/>
+        <ComboBox x:Name="CategoryBox" Grid.Row="1" Height="26" DisplayMemberPath="."
+                  SelectionChanged="CategoryBox_OnSelectionChanged"/>
+
+        <TextBlock Grid.Row="2" Text="Or type a new one (overrides the dropdown above):" Foreground="{StaticResource FontColor}" Margin="0,14,0,6"/>
+        <Border Grid.Row="3" BorderBrush="{StaticResource ControlBackground}" BorderThickness="2">
+            <controls:FrostyWatermarkTextBox xmlns:controls="clr-namespace:Frosty.Controls;assembly=FrostyControls"
+                                              x:Name="NewCategoryTextBox"
+                                              WatermarkText="New category name..."
+                                              Height="26"
+                                              VerticalContentAlignment="Center"
+                                              TextChanged="NewCategoryTextBox_OnTextChanged"/>
+        </Border>
+
+        <TextBlock Grid.Row="4" Text="Inserts above the currently selected mod, or at the end if none is selected."
+                   Foreground="{StaticResource FontColor}" Opacity="0.7" TextWrapping="Wrap" Margin="0,14,0,0" VerticalAlignment="Top"/>
+
+        <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,16,0,0">
+            <Button Content="Insert" Width="90" Height="28" Margin="0,0,8,0" Click="InsertButton_OnClick"/>
+            <Button Content="Cancel" Width="90" Height="28" Click="CancelButton_OnClick"/>
+        </StackPanel>
+    </Grid>
+</ctrl:FrostyWindow>
