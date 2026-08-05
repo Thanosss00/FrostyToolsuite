@@ -42,39 +42,39 @@
 	
   <ItemGroup>
     <Reference Include="AtlasTexturePlugin">
-      <HintPath>C:\Users\athan\OneDrive\Desktop\FrostyToolsuite-Developement\FrostyEditor\bin\Developer\Debug\Plugins\AtlasTexturePlugin.dll</HintPath>
+      <HintPath>..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\Plugins\AtlasTexturePlugin.dll</HintPath>
     </Reference>
     <Reference Include="DuplicationPlugin">
-      <HintPath>C:\Users\athan\OneDrive\Desktop\FrostyToolsuite-Developement\FrostyEditor\bin\Developer\Debug\Plugins\DuplicationPlugin.dll</HintPath>
+      <HintPath>..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\Plugins\DuplicationPlugin.dll</HintPath>
     </Reference>
     <Reference Include="FrostyControls">
-      <HintPath>C:\Users\athan\OneDrive\Desktop\FrostyToolsuite-Developement\FrostyEditor\bin\Developer\Debug\FrostyControls.dll</HintPath>
+      <HintPath>..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostyControls.dll</HintPath>
     </Reference>
     <Reference Include="FrostyCore">
-      <HintPath>C:\Users\athan\OneDrive\Desktop\FrostyToolsuite-Developement\FrostyEditor\bin\Developer\Debug\FrostyCore.dll</HintPath>
+      <HintPath>..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostyCore.dll</HintPath>
     </Reference>
     <Reference Include="FrostyHash">
-      <HintPath>C:\Users\athan\OneDrive\Desktop\FrostyToolsuite-Developement\FrostyEditor\bin\Developer\Debug\FrostyHash.dll</HintPath>
+      <HintPath>..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostyHash.dll</HintPath>
     </Reference>
     <Reference Include="FrostyModSupport">
-      <HintPath>C:\Users\athan\OneDrive\Desktop\FrostyToolsuite-Developement\FrostyEditor\bin\Developer\Debug\FrostyModSupport.dll</HintPath>
+      <HintPath>..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostyModSupport.dll</HintPath>
     </Reference>
     <Reference Include="FrostySdk">
-      <HintPath>C:\Users\athan\OneDrive\Desktop\FrostyToolsuite-Developement\FrostyEditor\bin\Developer\Debug\FrostySdk.dll</HintPath>
+      <HintPath>..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostySdk.dll</HintPath>
     </Reference>
     <Reference Include="FsLocalizationPlugin">
-      <HintPath>C:\Users\athan\OneDrive\Desktop\FrostyToolsuite-Developement\FrostyEditor\bin\Developer\Debug\Plugins\FsLocalizationPlugin.dll</HintPath>
+      <HintPath>..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\Plugins\FsLocalizationPlugin.dll</HintPath>
     </Reference>
     <Reference Include="MeshSetPlugin">
-      <HintPath>C:\Users\athan\OneDrive\Desktop\FrostyToolsuite-Developement\FrostyEditor\bin\Developer\Debug\Plugins\MeshSetPlugin.dll</HintPath>
+      <HintPath>..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\Plugins\MeshSetPlugin.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="RootInstanceEntriesPlugin">
-      <HintPath>C:\Users\athan\OneDrive\Desktop\FrostyToolsuite-Developement\FrostyEditor\bin\Developer\Debug\Plugins\RootInstanceEntriesPlugin.dll</HintPath>
+      <HintPath>..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\Plugins\RootInstanceEntriesPlugin.dll</HintPath>
     </Reference>
   </ItemGroup>
 
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<Exec Command="xcopy /Y &quot;$(TargetPath)&quot; &quot;C:\Users\athan\OneDrive\Desktop\FrostyToolsuite-Developement\FrostyEditor\bin\Developer\Debug\Plugins&quot;" />
+		<Exec Command="xcopy /Y &quot;$(TargetPath)&quot; &quot;D:\Frosty\FrostyToolSuite\FrostyEditor\bin\Developer\Debug\Plugins&quot;" />
 	</Target>
 </Project>
