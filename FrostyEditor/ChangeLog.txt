@@ -1,4 +1,17 @@
-﻿v1.0.6.3
+﻿v1.0.6.4
+--------
+- Fix issue with thread unsafe hashset (#327)
+- Fixed Remember Profile bug (#329)
+- Icon for steam shortcut (#330)
+- Minor QOL Improvements to applying mods (#328)
+- Fix issue with EnumerateRes ignoring AddedBundles (#331)
+- Add startup action support to the mod manager (#332)
+- Fix issue when importing over a duplicated Atlas Texture (#334)
+- Stop auto compile plugins and fix xcopy bug (#337)
+- Fix property grid search crashes (#340)
+- Post Launch and minimize for ManageModData (#344)
+
+v1.0.6.3
 --------
 - Improved performance of the EbxWriter
 - Improved import for collections (#317)
