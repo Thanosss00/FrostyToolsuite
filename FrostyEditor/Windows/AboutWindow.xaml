@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:FrostyEditor.Windows"
         xmlns:ext="clr-namespace:FrostyEditor.Extensions"
         mc:Ignorable="d"
-        Title="About Frosty Editor" Height="450" Width="350"
+        Title="About Frosty Editor" Height="465" Width="375"
         ResizeMode="NoResize" Icon="/FrostyEditor;component/AppIcon.ico"
         WindowStartupLocation="CenterScreen">
     
@@ -66,6 +66,22 @@
                         <TextBlock FontFamily="Global User Interface" FontSize="12" Margin="2" HorizontalAlignment="Center">
                             <Hyperlink NavigateUri="https://discord.gg/sB8ZUAT" Foreground="{StaticResource FontColor}" RequestNavigate="hyperlink_RequestNavigate">
                                 https://discord.gg/sB8ZUAT
+                            </Hyperlink>
+                        </TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock Text="Original Source Code: " Foreground="{StaticResource FontColor}" FontWeight="Bold"/>
+                        <TextBlock FontFamily="Global User Interface" FontSize="12" Margin="2" HorizontalAlignment="Center">
+                            <Hyperlink NavigateUri="https://github.com/CadeEvs/FrostyToolsuite" Foreground="{StaticResource FontColor}" RequestNavigate="hyperlink_RequestNavigate">
+                                https://github.com/CadeEvs/FrostyToolsuite
+                            </Hyperlink>
+                        </TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock Text="Fork Source Code: " Foreground="{StaticResource FontColor}" FontWeight="Bold"/>
+                        <TextBlock FontFamily="Global User Interface" FontSize="12" Margin="2" HorizontalAlignment="Center">
+                            <Hyperlink NavigateUri="https://github.com/Thanosss00/FrostyToolsuite" Foreground="{StaticResource FontColor}" RequestNavigate="hyperlink_RequestNavigate">
+                                https://github.com/Thanosss00/FrostyToolsuite
                             </Hyperlink>
                         </TextBlock>
                     </StackPanel>

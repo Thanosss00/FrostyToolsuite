@@ -605,7 +605,7 @@
                                                 </StackPanel>
                                                 <StackPanel Orientation="Horizontal"
                                                             Margin="8,8,0,0">
-                                                    <TextBlock Text="Frosty Source Code:"
+                                                    <TextBlock Text="Frosty Original Source Code:"
                                                                Foreground="{StaticResource FontColor}"
                                                                Margin="0,0,20,0" />
                                                     <TextBlock>
@@ -614,6 +614,19 @@
                                                                RequestNavigate="hyperlink_RequestNavigate">
                                                         https://github.com/CadeEvs/FrostyToolsuite
                                                     </Hyperlink>
+                                                    </TextBlock>
+                                                </StackPanel>
+                                                <StackPanel Orientation="Horizontal"
+                                                            Margin="8,8,0,0">
+                                                    <TextBlock Text="Frosty Fork Source Code:"
+                                                               Foreground="{StaticResource FontColor}"
+                                                               Margin="0,0,20,0" />
+                                                    <TextBlock>
+                                                        <Hyperlink NavigateUri="https://github.com/Thanosss00/FrostyToolsuite"
+                                                                   Foreground="{StaticResource FontColor}"
+                                                                   RequestNavigate="hyperlink_RequestNavigate">
+                                                            https://github.com/Thanosss00/FrostyToolsuite
+                                                        </Hyperlink>
                                                     </TextBlock>
                                                 </StackPanel>
                                                 <StackPanel Orientation="Horizontal"

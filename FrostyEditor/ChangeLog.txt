@@ -10,6 +10,7 @@
 - Stop auto compile plugins and fix xcopy bug (#337)
 - Fix property grid search crashes (#340)
 - Post Launch and minimize for ManageModData (#344)
+- Small changes to the Main and About window to distinguish the original source code from this fork
 
 v1.0.6.3
 --------
